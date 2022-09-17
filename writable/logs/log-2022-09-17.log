@@ -1,0 +1,60 @@
+CRITICAL - 2022-09-17 05:00:24 --> Invalid file: welcome_message.php
+#0 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message...')
+#1 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Common.php(1089): CodeIgniter\View\View->render('welcome_message', Array, true)
+#2 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\app\Controllers\Home.php(9): view('welcome_message')
+#3 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-17 05:47:45 --> syntax error, unexpected token "(array)"
+#0 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-09-17 05:48:03 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-09-17 05:48:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\app\Controllers\BarChartController.php(18): CodeIgniter\Database\BaseConnection->query('SELECT MONTHNAM...')
+#2 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(832): App\Controllers\BarChartController->index()
+#3 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarChartController))
+#4 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-09-17 05:48:36 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-09-17 05:48:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\app\Controllers\BarChartController.php(18): CodeIgniter\Database\BaseConnection->query('SELECT MONTHNAM...')
+#2 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(832): App\Controllers\BarChartController->index()
+#3 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarChartController))
+#4 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-09-17 05:48:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM deposit GROUP BY month_name' at line 1
+CRITICAL - 2022-09-17 05:48:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM deposit GROUP BY month_name' at line 1
+#0 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT MONTHNAM...', 0)
+#1 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MONTHNAM...')
+#2 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MONTHNAM...')
+#3 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\app\Controllers\BarChartController.php(18): CodeIgniter\Database\BaseConnection->query('SELECT MONTHNAM...')
+#4 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(832): App\Controllers\BarChartController->index()
+#5 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarChartController))
+#6 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-09-17 05:49:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM deposit GROUP BY month_name' at line 1
+CRITICAL - 2022-09-17 05:49:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM deposit GROUP BY month_name' at line 1
+#0 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT MONTHNAM...', 0)
+#1 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MONTHNAM...')
+#2 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MONTHNAM...')
+#3 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\app\Controllers\BarChartController.php(18): CodeIgniter\Database\BaseConnection->query('SELECT MONTHNAM...')
+#4 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(832): App\Controllers\BarChartController->index()
+#5 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarChartController))
+#6 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeigniter\CI4\dynamic-bar-chart-js-ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
