@@ -11,8 +11,8 @@ class BarChartController extends BaseController{
         $this->db = \Config\Database::connect();
     }
 
+    // The main point for entry
     public function index() {
-
         $depositModel = new DepositModel();
 
         $depositData = $this->db->query("SELECT MONTHNAME(depo_date) AS month_name, SUM(amount) as amount FROM deposit GROUP BY month_name")->getResultArray();

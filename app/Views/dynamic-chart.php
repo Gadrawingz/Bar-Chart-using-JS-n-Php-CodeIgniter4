@@ -18,8 +18,7 @@
 	<?php 
 	if($deposits):
 		foreach($deposits as $depo):
-			//echo "<p>".$depo['month_name']." in ".$depo['amount']."</p>";
-			$month[]  = $depo['month_name'];
+			$month[]  = $depo['month_name']." of ";
 			$amount[] = $depo['amount'];
 		endforeach;
 	endif;
@@ -29,7 +28,6 @@
 <!-- SCRIPTS -->
 <script>
 
-  // const labels = ['January', 'February', 'March', 'April', 'May', 'June', ];
   const labels = <?php echo json_encode($month) ?>
 
   const data = {
@@ -60,7 +58,7 @@
   };
 
   const config = {
-    type: 'pie',
+    type: 'bar',
     data: data,
     options: {}
   };
